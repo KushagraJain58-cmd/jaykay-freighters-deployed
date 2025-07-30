@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Search, Package, Truck, Plane, Ship } from "lucide-react"

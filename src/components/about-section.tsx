@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function AboutSection() {
     return (
         <section className="py-16 bg-[#1a237e] dark:bg-gray-900 text-white transition-colors">

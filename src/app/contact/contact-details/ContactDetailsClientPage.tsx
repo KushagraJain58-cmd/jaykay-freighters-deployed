@@ -66,26 +66,27 @@ export default function ContactDetailsClientPage() {
         e.preventDefault()
 
         try {
-            const response = await fetch("/api/send-email", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
-            })
+            // const response = await fetch("/api/send-email", {
+            //     method: "POST",
+            //     headers: { "Content-Type": "application/json" },
+            //     body: JSON.stringify(formData),
+            // })
 
-            const result = await response.json()
+            // const result = await response.json()
 
-            if (result.success) {
-                alert("Email sent successfully!")
-                setFormData({
-                    fullName: "",
-                    email: "",
-                    phoneNumber: "",
-                    message: "",
-                    preferredContact: "email",
-                })
-            } else {
-                alert("Failed to send email. Please try again later.")
-            }
+            // if (result.success) {
+            //     alert("Email sent successfully!")
+            //     setFormData({
+            //         fullName: "",
+            //         email: "",
+            //         phoneNumber: "",
+            //         message: "",
+            //         preferredContact: "email",
+            //     })
+            // } else {
+            //     alert("Failed to send email. Please try again later.")
+            // }
+            alert("Form submission is currently disabled. Email logic is ready for implementation.")
         } catch (error) {
             console.error("Error submitting form:", error)
             alert("Something went wrong.")

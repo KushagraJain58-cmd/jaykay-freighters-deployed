@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next"
 import { Users, FileText, TrendingUp, Shield, Lightbulb, CheckCircle } from "lucide-react"
 import Breadcrumb from "@/components/breadcrumb"

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next"
 import { Ship, Container, Anchor, Globe, DollarSign } from "lucide-react"
 import Breadcrumb from "@/components/breadcrumb"
