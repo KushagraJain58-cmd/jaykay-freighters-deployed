@@ -1,16 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next"
 import Breadcrumb from "@/components/breadcrumb"
-import Image from "next/image"
-import aeo from "@/assets/logos/aeo.png"
-import bcba from "@/assets/logos/bcba.jpg"
-import ffi from "@/assets/logos/ffi.png"
-import mto from "@/assets/logos/mto.jpg"
-import fieo from "@/assets/logos/fieo.png"
-import iso from "@/assets/logos/iso.jpg"
-import dcba from "@/assets/logos/dcba.jpg"
-import amtoi from "@/assets/logos/AMTOI.jpg"
-import msme from "@/assets/logos/msme.jpg"
 import CertificationLogos from "@/components/certificationLogos"
 
 export const metadata: Metadata = {
