@@ -8,7 +8,7 @@ import mto from "@/assets/logos/mto.jpg"
 import fieo from "@/assets/logos/fieo.png"
 import iso from "@/assets/logos/iso.jpg"
 import dcba from "@/assets/logos/dcba.jpg"
-import amtoi from "@/assets/logos/amtoi.jpg"
+import amtoi from "@/assets/logos/amtoi_image.jpg"
 import msme from "@/assets/logos/msme.jpg"
 
 const logos = [iso, mto, dcba, bcba, aeo, amtoi, ffi, fieo, msme]
