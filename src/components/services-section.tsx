@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link"
-import { Package, Globe, Truck, Box, Warehouse, Plane, Ship, ShieldCheck } from "lucide-react"
+import { Package, Globe, Box, Warehouse } from "lucide-react"
 
 const services = [
     {
