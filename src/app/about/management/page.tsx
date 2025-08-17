@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next"
 import Breadcrumb from "@/components/breadcrumb"
+import CertificationLogos from "@/components/certificationLogos"
 
 export const metadata: Metadata = {
     title: "Management - About Jaykay Freighters",
@@ -105,20 +106,8 @@ export default function ManagementPage() {
                     </div>
 
                     {/* Certification Logos */}
-                    <div className="mt-16">
-                        <div className="flex flex-wrap justify-center items-center gap-8">
-                            {[1, 2, 3, 4, 5, 6, 7].map((i) => (
-                                <div
-                                    key={i}
-                                    className="w-24 h-24 bg-white dark:bg-gray-800 p-2 rounded-md shadow-sm border dark:border-gray-700 flex items-center justify-center transition-colors"
-                                >
-                                    <div className="w-16 h-16 bg-gray-200 dark:bg-gray-600 rounded-full flex items-center justify-center">
-                                        <span className="text-xs text-gray-500 dark:text-gray-400">Logo {i}</span>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    <CertificationLogos />
+
                 </div>
             </div>
         </main>

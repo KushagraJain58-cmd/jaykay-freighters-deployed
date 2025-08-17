@@ -12,53 +12,53 @@ const services = [
     },
     {
         id: 2,
-        title: "INTL. FREIGHT FORWARDING",
+        title: "INTL. FREIGHT FORWARDING & MULTI MODAL TRANSPORTATION",
         description: "From group-age shipments to full container loads.",
         icon: <Globe className="h-12 w-12 text-yellow-500 dark:text-yellow-400" />,
         href: "/services/intl-freight-forwarding",
     },
+    // {
+    //     id: 3,
+    //     title: "MULTI MODAL TRANSPORTATION",
+    //     description: "We provide our customers with comprehensive solutions.",
+    //     icon: <Truck className="h-12 w-12 text-yellow-500 dark:text-yellow-400" />,
+    //     href: "/services/multi-modal-transportation",
+    // },
     {
         id: 3,
-        title: "MULTI MODAL TRANSPORTATION",
-        description: "We provide our customers with comprehensive solutions.",
-        icon: <Truck className="h-12 w-12 text-yellow-500 dark:text-yellow-400" />,
-        href: "/services/multi-modal-transportation",
-    },
-    {
-        id: 4,
         title: "CONSULTANCY",
         description: "Consultancy is also a part of our services.",
         icon: <Box className="h-12 w-12 text-yellow-500 dark:text-yellow-400" />,
         href: "/services/consultancy",
     },
     {
-        id: 5,
+        id: 4,
         title: "WAREHOUSING",
         description: "We provide warehousing facilities across major ports.",
         icon: <Warehouse className="h-12 w-12 text-yellow-500 dark:text-yellow-400" />,
         href: "/services/warehousing",
     },
-    {
-        id: 6,
-        title: "AIR FREIGHT",
-        description: "With a comprehensive range of air freight services.",
-        icon: <Plane className="h-12 w-12 text-yellow-500 dark:text-yellow-400" />,
-        href: "/services/air-freight",
-    },
-    {
-        id: 7,
-        title: "SEA FREIGHT",
-        description: "From group age shipments to full container loads.",
-        icon: <Ship className="h-12 w-12 text-yellow-500 dark:text-yellow-400" />,
-        href: "/services/sea-freight",
-    },
-    {
-        id: 8,
-        title: "VALUE ADDED SERVICES",
-        description: "Cargo Insurance - We help you protect your shipment.",
-        icon: <ShieldCheck className="h-12 w-12 text-yellow-500 dark:text-yellow-400" />,
-        href: "/services/value-added-services",
-    },
+    // {
+    //     id: 5,
+    //     title: "AIR FREIGHT",
+    //     description: "With a comprehensive range of air freight services.",
+    //     icon: <Plane className="h-12 w-12 text-yellow-500 dark:text-yellow-400" />,
+    //     href: "/services/air-freight",
+    // },
+    // {
+    //     id: 6,
+    //     title: "SEA FREIGHT",
+    //     description: "From group age shipments to full container loads.",
+    //     icon: <Ship className="h-12 w-12 text-yellow-500 dark:text-yellow-400" />,
+    //     href: "/services/sea-freight",
+    // },
+    // {
+    //     id: 7,
+    //     title: "VALUE ADDED SERVICES",
+    //     description: "Cargo Insurance - We help you protect your shipment.",
+    //     icon: <ShieldCheck className="h-12 w-12 text-yellow-500 dark:text-yellow-400" />,
+    //     href: "/services/value-added-services",
+    // },
 ]
 
 export default function ServicesSection() {
@@ -72,7 +72,7 @@ export default function ServicesSection() {
                     creating ultimate customer's satisfaction by providing the most personalised services.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-12">
                     {services.map((service) => (
                         <Link
                             key={service.id}

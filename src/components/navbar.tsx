@@ -5,6 +5,8 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, X, MapPin, Phone, Mail, ChevronDown } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
+import jf from "@/assets/logos/jf.png"
+import Image from "next/image"
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -77,11 +79,20 @@ export default function Navbar() {
                     <div className="flex items-center mb-2 md:mb-0">
                         <div className="mr-4">
                             <Link href="/">
-                                <div className="flex items-center">
+                                {/* <div className="flex items-center">
                                     <div className="w-12 h-12 relative">
                                         <div className="w-full h-full bg-[#1a237e] dark:bg-[#2563eb] flex items-center justify-center text-white font-bold text-xl rounded transition-colors">
                                             JF
                                         </div>
+                                    </div>
+                                </div> */}
+                                <div className="flex items-center">
+                                    <div className="h-12 relative">
+                                        <Image
+                                            src={jf}
+                                            alt="Profile"
+                                            className="w-full h-full rounded object-cover"
+                                        />
                                     </div>
                                 </div>
                             </Link>
@@ -109,8 +120,7 @@ export default function Navbar() {
                                 <h3 className="text-sm font-semibold uppercase text-gray-900 dark:text-gray-100">
                                     FEEL FREE TO CALL US
                                 </h3>
-                                <p className="text-xs text-gray-600 dark:text-gray-300">+91 11 23538881-84</p>
-                                <p className="text-xs text-gray-600 dark:text-gray-300">+91 9212359057-58</p>
+                                <p className="text-xs text-gray-600 dark:text-gray-300">+91 9212359057-59</p>
                             </div>
                         </div>
 

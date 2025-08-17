@@ -6,6 +6,7 @@ import { useState } from "react"
 import { Send } from "lucide-react"
 import Breadcrumb from "@/components/breadcrumb"
 import { Button } from "@/components/ui/button"
+import CertificationLogos from "@/components/certificationLogos"
 
 const breadcrumbItems = [
     { label: "HOME", href: "/" },
@@ -301,30 +302,8 @@ export default function ContactDetailsClientPage() {
 
             {/* Certification Logos Section */}
             <div className="bg-gray-50 dark:bg-gray-800 py-12 transition-colors">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-6xl mx-auto">
-                        <div className="flex flex-wrap justify-center items-center gap-8">
-                            {[
-                                { name: "JAS-ANZ", logo: "/placeholder.svg?height=80&width=120" },
-                                { name: "MTO", logo: "/placeholder.svg?height=80&width=120" },
-                                { name: "Association Delhi", logo: "/placeholder.svg?height=80&width=120" },
-                                { name: "Indian Customs", logo: "/placeholder.svg?height=80&width=120" },
-                                { name: "BCBA", logo: "/placeholder.svg?height=80&width=120" },
-                                { name: "FFI", logo: "/placeholder.svg?height=80&width=120" },
-                                { name: "FIEO", logo: "/placeholder.svg?height=80&width=120" },
-                            ].map((cert, index) => (
-                                <div
-                                    key={index}
-                                    className="w-24 h-16 md:w-32 md:h-20 bg-white dark:bg-gray-700 p-2 rounded-md shadow-sm border dark:border-gray-600 flex items-center justify-center transition-colors hover:shadow-md"
-                                >
-                                    <div className="w-16 h-12 bg-gray-200 dark:bg-gray-600 rounded flex items-center justify-center">
-                                        <span className="text-xs text-gray-500 dark:text-gray-400">{cert.name}</span>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
+                <CertificationLogos />
+
             </div>
         </main>
     )

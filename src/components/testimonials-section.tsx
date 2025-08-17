@@ -22,6 +22,15 @@ const testimonials = [
         author: "Third Client",
         position: "Company Name",
     },
+    {
+        id: 4,
+        text: `We appreciate the quality work provided by you and your team towards smooth handling of our break bulk, ODC and general shipments. We commend you for cost-effective services, an outstanding customer care team and the level of accountability and dedication demonstrated by your organization. 
+        We wish you and your organization a continued fruitful professional success in all time to come.
+        Thank you for your Cooperation and looking forward to many more years of association with you.
+        `,
+        author: "Fourth Client",
+        position: "Company Name",
+    }
 ]
 
 export default function TestimonialsSection() {
@@ -57,13 +66,13 @@ export default function TestimonialsSection() {
                                 <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg relative border dark:border-gray-700 transition-colors">
                                     <Quote className="h-12 w-12 text-yellow-500 dark:text-yellow-400 absolute -top-6 left-6" />
                                     <p className="text-gray-700 dark:text-gray-300 italic mb-6 pt-4">{testimonial.text}</p>
-                                    <div className="flex items-center">
+                                    {/* <div className="flex items-center">
                                         <div className="w-12 h-12 bg-gray-300 dark:bg-gray-600 rounded-full mr-4"></div>
                                         <div>
                                             <h4 className="font-bold text-gray-900 dark:text-white">{testimonial.author}</h4>
                                             <p className="text-sm text-gray-600 dark:text-gray-400">{testimonial.position}</p>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         ))}

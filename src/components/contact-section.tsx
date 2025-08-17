@@ -5,8 +5,11 @@ import bcba from "../assets/logos/bcba.jpg"
 import ffi from "../assets/logos/ffi.png"
 import mto from "../assets/logos/mto.jpg"
 import fieo from "../assets/logos/fieo.png"
-import jasans1 from "../assets/logos/jasans1.png"
-import association from "../assets/logos/association.png.jpg"
+import iso from "../assets/logos/iso.jpg"
+import dcba from "../assets/logos/dcba.jpg"
+import amtoi from "../assets/logos/AMTOI.jpg"
+import msme from "../assets/logos/msme.jpg"
+
 import Image from "next/image"
 
 export default function ContactSection() {
@@ -40,8 +43,7 @@ export default function ContactSection() {
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-gray-900 dark:text-white">PHONE</h3>
-                                    <p className="text-sm text-gray-600 dark:text-gray-300">+91 11 23538881-82</p>
-                                    <p className="text-sm text-gray-600 dark:text-gray-300">+91 11 64648881-84</p>
+                                    <p className="text-sm text-gray-600 dark:text-gray-300">+91 9212359057-59</p>
                                 </div>
                             </div>
 
@@ -77,14 +79,25 @@ export default function ContactSection() {
                     <div className="lg:col-span-2 h-[400px] rounded-lg overflow-hidden">
                         {/* This is a placeholder for the map. In a real application, you would integrate Google Maps or another map provider */}
                         <div className="w-full h-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center transition-colors">
-                            <p className="text-gray-600 dark:text-gray-300">Map will be displayed here</p>
+                            <div className="w-full h-full bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.0123456789!2d77.2090!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0123456789%3A0x1234567890abcdef!2sWhite%20House%2C%20Rani%20Jhansi%20Road%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Jaykay Freighters Office Location"
+                                ></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="flex flex-wrap justify-center items-center gap-8 mt-12">
                     {/* Certification logos */}
-                    {[jasans1, mto, association, aeo, bcba, ffi, fieo].map((src, i) => (
+                    {[iso, mto, dcba, bcba, aeo, amtoi, ffi, fieo, msme].map((src, i) => (
                         <div
                             key={i}
                             className="w-24 h-24 bg-white dark:bg-gray-900 p-1 rounded-md shadow-sm border dark:border-gray-700 flex items-center justify-center transition-colors"
